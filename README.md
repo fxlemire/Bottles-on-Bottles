@@ -1,5 +1,5 @@
 #Bottles on Bottles#
-##Project for IS2150 - e-Business Design and Implementation##
+####Project for IS2150 - e-Business Design and Implementation####
 _Section A:_
 * Product ->  View Details, Search, List (order by name // price)
 * Category -> View, Search, List Products (order by name // price)
