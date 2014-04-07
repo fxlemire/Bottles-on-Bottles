@@ -1,5 +1,4 @@
 #Project IS2150#
-================
 _Section A:_
 * Product ->  View Details, Search, List (order by name // price)
 * Category -> View, Search, List Products (order by name // price)
