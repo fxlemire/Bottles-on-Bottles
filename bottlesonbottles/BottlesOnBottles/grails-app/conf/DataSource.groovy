@@ -30,8 +30,11 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-            properties {
+            url = "jdbc:mysql://is2150-4-i.comp.nus.edu.sg/isproject"
+            username = "fxlemire"
+            password = "is2150"
+            /*
+               properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                jmxEnabled = true
                initialSize = 5
@@ -51,6 +54,7 @@ environments {
                jdbcInterceptors = "ConnectionState"
                defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
             }
+            */
         }
     }
 }

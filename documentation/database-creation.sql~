@@ -57,8 +57,3 @@ INSERT INTO belongsTo VALUES (
     "080480280017",
     "vodka"
 );
-
-INSERT INTO product VALUES (
-    "080432400432",
-    "Chivas Regal"
-);
