@@ -18,4 +18,8 @@ class Category {
         description()
         image()
     }
+    
+    String toString() {
+        name
+    }
 }
