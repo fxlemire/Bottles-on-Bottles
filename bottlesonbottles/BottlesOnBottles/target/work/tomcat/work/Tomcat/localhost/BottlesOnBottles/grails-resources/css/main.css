@@ -98,6 +98,12 @@ img {
     text-indent: 1.7%;
 }
 
+img.header {
+    float: right;
+    margin-top: .4%;
+    margin-right: 1%;
+}
+
 #grailsLogo a {
 	display: inline-block;
 	margin: 1em;
