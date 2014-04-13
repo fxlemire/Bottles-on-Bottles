@@ -11,7 +11,7 @@ class UrlMappings {
         "500"(view:'/error')
         
         "/" {
-            controller = "HomePageController"
+            controller = "HomePage"
             action = "index"
         }
 	}
