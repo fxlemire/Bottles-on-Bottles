@@ -22,7 +22,7 @@
 			#status {
 				background-color: #FAFAFA;
 				border: .2em solid #fff;
-				width: 20em;
+				width: 19%;
                                 height: 100%;
                                 display: inline-block;
 			}
