@@ -1,5 +1,5 @@
 
-<%@ page import="product.Product" %>
+<%@ page import="bottlesonbottles.Product" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,17 +24,17 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="age" title="${message(code: 'product.age.label', default: 'Age')}" />
+						<g:sortableColumn property="name" title="${message(code: 'product.name.label', default: 'Name')}" />
+					
+						<g:sortableColumn property="upc" title="${message(code: 'product.upc.label', default: 'Upc')}" />
 					
 						<g:sortableColumn property="aoc" title="${message(code: 'product.aoc.label', default: 'Aoc')}" />
-					
-						<g:sortableColumn property="country" title="${message(code: 'product.country.label', default: 'Country')}" />
 					
 						<g:sortableColumn property="description" title="${message(code: 'product.description.label', default: 'Description')}" />
 					
 						<g:sortableColumn property="image" title="${message(code: 'product.image.label', default: 'Image')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'product.name.label', default: 'Name')}" />
+						<g:sortableColumn property="price" title="${message(code: 'product.price.label', default: 'Price')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${productInstanceList}" status="i" var="productInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${productInstance.id}">${fieldValue(bean: productInstance, field: "age")}</g:link></td>
+						<td><g:link action="show" id="${productInstance.id}">${fieldValue(bean: productInstance, field: "name")}</g:link></td>
+					
+						<td>${fieldValue(bean: productInstance, field: "upc")}</td>
 					
 						<td>${fieldValue(bean: productInstance, field: "aoc")}</td>
-					
-						<td>${fieldValue(bean: productInstance, field: "country")}</td>
 					
 						<td>${fieldValue(bean: productInstance, field: "description")}</td>
 					
 						<td>${fieldValue(bean: productInstance, field: "image")}</td>
 					
-						<td>${fieldValue(bean: productInstance, field: "name")}</td>
+						<td>${fieldValue(bean: productInstance, field: "price")}</td>
 					
 					</tr>
 				</g:each>

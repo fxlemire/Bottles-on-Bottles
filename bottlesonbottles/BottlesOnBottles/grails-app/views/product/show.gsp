@@ -1,5 +1,5 @@
 
-<%@ page import="product.Product" %>
+<%@ page import="bottlesonbottles.Product" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,11 +23,20 @@
 			</g:if>
 			<ol class="property-list product">
 			
-				<g:if test="${productInstance?.age}">
+				<g:if test="${productInstance?.name}">
 				<li class="fieldcontain">
-					<span id="age-label" class="property-label"><g:message code="product.age.label" default="Age" /></span>
+					<span id="name-label" class="property-label"><g:message code="product.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="age-label"><g:fieldValue bean="${productInstance}" field="age"/></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${productInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${productInstance?.upc}">
+				<li class="fieldcontain">
+					<span id="upc-label" class="property-label"><g:message code="product.upc.label" default="Upc" /></span>
+					
+						<span class="property-value" aria-labelledby="upc-label"><g:fieldValue bean="${productInstance}" field="upc"/></span>
 					
 				</li>
 				</g:if>
@@ -37,15 +46,6 @@
 					<span id="aoc-label" class="property-label"><g:message code="product.aoc.label" default="Aoc" /></span>
 					
 						<span class="property-value" aria-labelledby="aoc-label"><g:fieldValue bean="${productInstance}" field="aoc"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${productInstance?.country}">
-				<li class="fieldcontain">
-					<span id="country-label" class="property-label"><g:message code="product.country.label" default="Country" /></span>
-					
-						<span class="property-value" aria-labelledby="country-label"><g:fieldValue bean="${productInstance}" field="country"/></span>
 					
 				</li>
 				</g:if>
@@ -68,29 +68,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productInstance?.name}">
-				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="product.name.label" default="Name" /></span>
-					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${productInstance}" field="name"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${productInstance?.percent}">
-				<li class="fieldcontain">
-					<span id="percent-label" class="property-label"><g:message code="product.percent.label" default="Percent" /></span>
-					
-						<span class="property-value" aria-labelledby="percent-label"><g:fieldValue bean="${productInstance}" field="percent"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${productInstance?.price}">
 				<li class="fieldcontain">
 					<span id="price-label" class="property-label"><g:message code="product.price.label" default="Price" /></span>
 					
 						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${productInstance}" field="price"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${productInstance?.country}">
+				<li class="fieldcontain">
+					<span id="country-label" class="property-label"><g:message code="product.country.label" default="Country" /></span>
+					
+						<span class="property-value" aria-labelledby="country-label"><g:fieldValue bean="${productInstance}" field="country"/></span>
 					
 				</li>
 				</g:if>
@@ -104,11 +95,29 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productInstance?.upc}">
+				<g:if test="${productInstance?.percent}">
 				<li class="fieldcontain">
-					<span id="upc-label" class="property-label"><g:message code="product.upc.label" default="Upc" /></span>
+					<span id="percent-label" class="property-label"><g:message code="product.percent.label" default="Percent" /></span>
 					
-						<span class="property-value" aria-labelledby="upc-label"><g:fieldValue bean="${productInstance}" field="upc"/></span>
+						<span class="property-value" aria-labelledby="percent-label"><g:fieldValue bean="${productInstance}" field="percent"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${productInstance?.age}">
+				<li class="fieldcontain">
+					<span id="age-label" class="property-label"><g:message code="product.age.label" default="Age" /></span>
+					
+						<span class="property-value" aria-labelledby="age-label"><g:fieldValue bean="${productInstance}" field="age"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${productInstance?.category}">
+				<li class="fieldcontain">
+					<span id="category-label" class="property-label"><g:message code="product.category.label" default="Category" /></span>
+					
+						<span class="property-value" aria-labelledby="category-label"><g:link controller="category" action="show" id="${productInstance?.category?.id}">${productInstance?.category?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

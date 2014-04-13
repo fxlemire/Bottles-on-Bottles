@@ -33,14 +33,14 @@ class Product {
     static constraints = {
         name(blank: false)
         upc(blank: false, unique: true)
-        aoc()
-        description()
-        image()
-        price()
-        country()
-        size()
-        percent()
-        age()
+        aoc(blank:true, nullable: true)
+        description(blank:true, nullable: true)
+        image(blank:true, nullable: true)
+        price(blank:true, nullable: true)
+        country(blank:true, nullable: true)
+        size(blank:true, nullable: true)
+        percent(blank:true, nullable: true)
+        age(blank:true, nullable: true)
     }
     
     String toString() {

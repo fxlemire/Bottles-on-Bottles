@@ -1,4 +1,4 @@
-<%@ page import="category.Category" %>
+<%@ page import="bottlesonbottles.Category" %>
 <!DOCTYPE html>
 <html>
 	<head>

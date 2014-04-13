@@ -15,8 +15,8 @@ class Category {
     }
     static constraints = {
         name(blank: false)
-        description()
-        image()
+        description(blank:true, nullable: true)
+        image(blank:true, nullable: true)
     }
     
     String toString() {

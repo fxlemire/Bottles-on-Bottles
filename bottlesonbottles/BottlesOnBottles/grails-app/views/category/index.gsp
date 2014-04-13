@@ -1,5 +1,5 @@
 
-<%@ page import="category.Category" %>
+<%@ page import="bottlesonbottles.Category" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,11 +24,11 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="name" title="${message(code: 'category.name.label', default: 'Name')}" />
+					
 						<g:sortableColumn property="description" title="${message(code: 'category.description.label', default: 'Description')}" />
 					
 						<g:sortableColumn property="image" title="${message(code: 'category.image.label', default: 'Image')}" />
-					
-						<g:sortableColumn property="name" title="${message(code: 'category.name.label', default: 'Name')}" />
 					
 					</tr>
 				</thead>
@@ -36,11 +36,11 @@
 				<g:each in="${categoryInstanceList}" status="i" var="categoryInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${categoryInstance.id}">${fieldValue(bean: categoryInstance, field: "description")}</g:link></td>
+						<td><g:link action="show" id="${categoryInstance.id}">${fieldValue(bean: categoryInstance, field: "name")}</g:link></td>
+					
+						<td>${fieldValue(bean: categoryInstance, field: "description")}</td>
 					
 						<td>${fieldValue(bean: categoryInstance, field: "image")}</td>
-					
-						<td>${fieldValue(bean: categoryInstance, field: "name")}</td>
 					
 					</tr>
 				</g:each>

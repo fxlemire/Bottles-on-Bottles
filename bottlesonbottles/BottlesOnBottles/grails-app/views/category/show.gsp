@@ -1,5 +1,5 @@
 
-<%@ page import="category.Category" %>
+<%@ page import="bottlesonbottles.Category" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list category">
 			
+				<g:if test="${categoryInstance?.name}">
+				<li class="fieldcontain">
+					<span id="name-label" class="property-label"><g:message code="category.name.label" default="Name" /></span>
+					
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${categoryInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${categoryInstance?.description}">
 				<li class="fieldcontain">
 					<span id="description-label" class="property-label"><g:message code="category.description.label" default="Description" /></span>
@@ -41,11 +50,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${categoryInstance?.name}">
+				<g:if test="${categoryInstance?.products}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="category.name.label" default="Name" /></span>
+					<span id="products-label" class="property-label"><g:message code="category.products.label" default="Products" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${categoryInstance}" field="name"/></span>
+						<g:each in="${categoryInstance.products}" var="p">
+						<span class="property-value" aria-labelledby="products-label"><g:link controller="product" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
