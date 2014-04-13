@@ -61,7 +61,7 @@
 			
 				<g:if test="${productInstance?.image}">
 				<li class="fieldcontain">
-					<span id="image-label" class="property-label"><g:message code="product.image.label" default="Image" /></span>
+					<span id="image-label" class="property-label"><img src="/BottlesOnBottles/product/displayImage/${productInstance.id}" width = "100" height = "100"><!--<g:message code="product.image.label" default="Image" />--></span>
 					
 				</li>
 				</g:if>
