@@ -57,7 +57,7 @@
                 <g:textField name="age"/>
             </div>
             
-            <input type="submit">
+            <g:actionSubmit value="Submit" action="addProductPost" />
             
         </g:form>   
         

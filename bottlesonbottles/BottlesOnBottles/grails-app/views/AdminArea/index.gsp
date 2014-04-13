@@ -12,6 +12,7 @@
         <title>Admin Area</title>
     </head>
     <body>
-        <a href="http://localhost:8080/BottlesOnBottles/adminArea/addproduct">Add Product</a>
+        <g:link action="addproduct">Add Product</g:link>
+        <g:link action="addcategory">Add Category</g:link>
     </body>
 </html>

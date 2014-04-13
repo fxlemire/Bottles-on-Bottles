@@ -12,6 +12,20 @@
         <title>Add Item Category</title>
     </head>
     <body>
-        <h1>Sample line</h1>
+        <h1>Add Category</h1>
+        <g:form controller ="AdminArea" action="addCategoryPost">
+            <div>
+                *Name of category: 
+                <g:textField name="name"> </g:textField>
+            </div>
+            <div>
+                *Category descritption:
+                <g:textField name="description" />
+            </div>
+            <div>
+                Image location
+                <g:textField name="img" />
+            </div>
+        </g:form>
     </body>
 </html>

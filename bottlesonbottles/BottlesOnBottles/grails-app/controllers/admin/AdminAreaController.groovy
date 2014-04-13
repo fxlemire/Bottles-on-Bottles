@@ -2,6 +2,7 @@ package admin
 
 import grails.plugin.springsecurity.annotation.Secured
 import product.Product
+import category.Category
 
 class AdminAreaController {
 
@@ -13,7 +14,10 @@ class AdminAreaController {
     def addproduct() {
         render(view: "addProductForm")
     }
-    
+    @Secured(['ROLE_ADMIN'])
+    def addcategory() {
+        render(view : "addCategoryForm")
+    }
     def editProducts() {
         render 'Strech Goal'
     }
@@ -31,12 +35,19 @@ class AdminAreaController {
             percent : params.percent,
             age : params.age
            )
-           
-        newProduct.save(flush: true)
+          
+       newProduct.save(flush: true)
+       redirect(action: "index")
     }
     
-    def newCatagory() {
-        //Add to Catagory db
+    @Secured(['ROLE_ADMIN'])
+    def addCatagoryPost() {
+        def newCategory = new category.Category (
+            name: params.name,
+            description: params.description,
+            image: params.img
+        )
         
+        newCategory.save(flush: true)
     }
 }
