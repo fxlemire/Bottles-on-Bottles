@@ -36,10 +36,10 @@ class Product {
         aoc()
         description()
         image()
-        price()
+        price(blank: false)
         country()
-        size()
-        percent()
+        size(blank: false)
+        percent(min:0, max:100)
         age()
     }
     
