@@ -1,6 +1,9 @@
-package product
+package bottlesonbottles
 
 class Product {
+
+    Category category
+    static belongsTo = Category
     
     String name //Name of product
     String upc //Universal Product Code
@@ -28,5 +31,19 @@ class Product {
     }
     
     static constraints = {
+        name(blank: false)
+        upc(blank: false, unique: true)
+        aoc()
+        description()
+        image()
+        price()
+        country()
+        size()
+        percent()
+        age()
+    }
+    
+    String toString() {
+        "$name, $percent%, \$$price"
     }
 }

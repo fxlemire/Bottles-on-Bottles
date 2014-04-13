@@ -1,6 +1,9 @@
-package category
+package bottlesonbottles
 
 class Category {
+
+    static hasMany = [products: Product]
+    
     String name
     String description
     String image
@@ -11,5 +14,8 @@ class Category {
         image column: 'image'
     }
     static constraints = {
+        name(blank: false)
+        description()
+        image()
     }
 }
