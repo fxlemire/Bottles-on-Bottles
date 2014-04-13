@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Add Product</title>
+        <title>Admin Area</title>
     </head>
     <body>
-        <h1>Sample line</h1>
+        <a href="http://localhost:8080/BottlesOnBottles/adminArea/addproduct">Add Product</a>
     </body>
 </html>
