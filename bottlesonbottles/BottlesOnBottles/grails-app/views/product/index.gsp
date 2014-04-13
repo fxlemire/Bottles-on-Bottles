@@ -50,7 +50,8 @@
 					
 						<td>${fieldValue(bean: productInstance, field: "description")}</td>
 					
-						<td>${fieldValue(bean: productInstance, field: "image")}</td>
+						<!--<td>${fieldValue(bean: productInstance, field: "image")}</td>-->
+                                                <td> <img src="/BottlesOnBottles/product/displayImage/${productInstance.id}" width = "100" height = "100"> </td>
 					
 						<td>${fieldValue(bean: productInstance, field: "price")}</td>
 					

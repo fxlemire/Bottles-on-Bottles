@@ -63,8 +63,6 @@
 				<li class="fieldcontain">
 					<span id="image-label" class="property-label"><g:message code="product.image.label" default="Image" /></span>
 					
-						<span class="property-value" aria-labelledby="image-label"><g:fieldValue bean="${productInstance}" field="image"/></span>
-					
 				</li>
 				</g:if>
 			

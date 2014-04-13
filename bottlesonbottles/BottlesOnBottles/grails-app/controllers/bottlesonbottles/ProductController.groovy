@@ -5,6 +5,7 @@ import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+
 @Transactional(readOnly = true)
 class ProductController {
 
@@ -98,7 +99,14 @@ class ProductController {
             '*'{ render status: NO_CONTENT }
         }
     }
-
+    @Secured(['ROLE_ADMIN'])
+    def displayImage(Product productInstance) {
+        def product = Product.get( params.id ) // get the record
+        response.outputStream << productInstance.image // write the image to the outputstream
+        response.outputStream.flush()
+    }
+    
+    
     protected void notFound() {
         request.withFormat {
             form multipartForm {

@@ -38,21 +38,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'image', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'image', 'error')} required">
 	<label for="image">
 		<g:message code="product.image.label" default="Image" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="image" value="${productInstance?.image}"/>
+	<input type="file" id="image" name="image" />
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'price', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'price', 'error')} required">
 	<label for="price">
 		<g:message code="product.price.label" default="Price" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="price" value="${productInstance?.price}"/>
+	<g:textField name="price" required="" value="${productInstance?.price}"/>
 
 </div>
 
@@ -65,12 +65,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'size', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'size', 'error')} required">
 	<label for="size">
 		<g:message code="product.size.label" default="Size" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="size" value="${productInstance?.size}"/>
+	<g:textField name="size" required="" value="${productInstance?.size}"/>
 
 </div>
 
@@ -79,7 +79,7 @@
 		<g:message code="product.percent.label" default="Percent" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="percent" type="number" value="${productInstance.percent}" required=""/>
+	<g:field name="percent" type="number" min="0" max="100" value="${productInstance.percent}" required=""/>
 
 </div>
 

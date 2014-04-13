@@ -9,7 +9,7 @@ class Product {
     String upc //Universal Product Code
     String aoc //Special Regional Distiction 
     String description //Product Description
-    String image // path to image
+    byte[] image // path to image
     String price //price of product
     String country //country of origin 
     String size // volume / quanity
@@ -35,7 +35,7 @@ class Product {
         upc(blank: false, unique: true)
         aoc()
         description()
-        image()
+        image(maxSize: 1024*1024*2)
         price(blank: false)
         country()
         size(blank: false)
