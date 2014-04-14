@@ -21,7 +21,7 @@
                     
 			#status {
 				background-color: #FAFAFA;
-				border: .2em solid #fff;
+				border-right: 1px solid #E0E0E0;
 				width: 19%;
                                 height: 100%;
                                 display: inline-block;
@@ -108,7 +108,7 @@
                     
                     
                     <div id="list-product" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+			<h1><!--<g:message code="default.list.label" args="[entityName]" />-->BoB's Products</h1>
 			<g:if test="${flash.message}">
 				<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -134,7 +134,7 @@
 				<g:each in="${productInstanceList}" status="i" var="productInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${productInstance.id}">${fieldValue(bean: productInstance, field: "name")}</g:link></td>
+						<td><g:link controller="Product" action="show" id="${productInstance.id}">${fieldValue(bean: productInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: productInstance, field: "upc")}</td>
 					
