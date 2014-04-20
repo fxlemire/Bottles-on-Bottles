@@ -1,8 +1,8 @@
 package admin
 
 import grails.plugin.springsecurity.annotation.Secured
-import product.Product
-import category.Category
+import bottlesonbottles.Product
+import bottlesonbottles.Category
 
 class AdminAreaController {
 
@@ -42,7 +42,7 @@ class AdminAreaController {
     
     @Secured(['ROLE_ADMIN'])
     def addCatagoryPost() {
-        def newCategory = new category.Category (
+        def newCategory = new bottlesonbottles.Category (
             name: params.name,
             description: params.description,
             image: params.img
