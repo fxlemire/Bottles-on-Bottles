@@ -5,11 +5,11 @@
 	<div id="session">
 		<nobr>
 			<sec:ifLoggedIn>
-				Welcome back, <b><sec:username/></b>! &nbsp;&nbsp;
-				<g:link controller='logout' action='logout'>Logout</g:link>
+				<g:message code="topbar.welcome_msg" /><b><sec:username/></b>! &nbsp;&nbsp;
+				<g:link controller='logout' action='logout'><g:message code="topbar.logout" /></g:link>
 			</sec:ifLoggedIn>
 			<sec:ifNotLoggedIn>
-				<g:link controller='login' action='auth'>Login</g:link>
+				<g:link controller='login' action='auth'><g:message code="topbar.login" /></g:link>
 			</sec:ifNotLoggedIn>
 		</nobr>
 	</div>

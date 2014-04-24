@@ -14,29 +14,35 @@ registerSitemeshPreprocessMode()
 printHtmlPart(0)
 createTagBody(1, {->
 printHtmlPart(1)
-invokeTag('username','sec',8,[:],-1)
+invokeTag('message','g',8,['code':("topbar.welcome_msg")],-1)
 printHtmlPart(2)
-createClosureForHtmlPart(3, 2)
+invokeTag('username','sec',8,[:],-1)
+printHtmlPart(3)
+createTagBody(2, {->
+invokeTag('message','g',9,['code':("topbar.logout")],-1)
+})
 invokeTag('link','g',9,['controller':("logout"),'action':("logout")],2)
 printHtmlPart(4)
 })
 invokeTag('ifLoggedIn','sec',10,[:],1)
 printHtmlPart(4)
 createTagBody(1, {->
-printHtmlPart(5)
-createClosureForHtmlPart(6, 2)
+printHtmlPart(1)
+createTagBody(2, {->
+invokeTag('message','g',12,['code':("topbar.login")],-1)
+})
 invokeTag('link','g',12,['controller':("login"),'action':("auth")],2)
 printHtmlPart(4)
 })
 invokeTag('ifNotLoggedIn','sec',13,[:],1)
-printHtmlPart(7)
+printHtmlPart(5)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1398353055024L
+public static final long LAST_MODIFIED = 1398360589393L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'

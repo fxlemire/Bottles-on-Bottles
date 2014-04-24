@@ -90,7 +90,7 @@ img {
 }
 
 #header {
-    font-size: 6em;
+    font-size: 4em;
     font-family: acid;
     color:#FFF;
     background-color: #000;
@@ -107,6 +107,7 @@ img.header {
     float: right;
     margin-right: 1%;
     padding-top: 0.4%;
+    max-width: 60px;
 }
 
 #grailsLogo a {
