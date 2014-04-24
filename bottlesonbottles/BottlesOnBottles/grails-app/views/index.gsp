@@ -117,16 +117,18 @@ p {
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="status" role="complementary">
 		<h1>Search Product</h1>
-		<ul>
-			<li>name <input type="text" /></li>
-			<li>price <input type="text" /></li>
-			<li>AOC <input type="text" /></li>
-			<li>country <input type="text" /></li>
-			<li>quantity <input type="text" /></li>
-			<li>percentage <input type="text" /></li>
-			<li>age <input type="text" /></li>
-		</ul>
-		<input type="submit" />
+		<g:form action="searchProducts" method="post">
+			<ul>
+				<li><label for="name">name</label> <g:textField name="name" /></li>
+				<li><label for="price">price</label> <g:textField name="price" /></li>
+				<li><label for="AOC">AOC</label> <g:textField name="AOC" /></li>
+				<li><label for="country">country</label> <g:textField name="country" /></li>
+				<li><label for="quantity">quantity</label> <g:textField name="quantity" /></li>
+				<li><label for="percentage">percentage</label> <g:textField name="percentage" /></li>
+				<li><label for="age">age</label> <g:textField name="age" /></li>
+			</ul>
+			<g:actionSubmit value="Search" action="searchProducts"/>
+		</g:form>
 	</div>
 	<!--<div id="page-body" role="main">-->
 

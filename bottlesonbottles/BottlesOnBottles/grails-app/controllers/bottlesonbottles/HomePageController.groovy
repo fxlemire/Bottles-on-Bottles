@@ -11,4 +11,9 @@ class HomePageController {
         render (view : '/index', model : [productInstanceList : productInstanceList])
        
     }
+	
+	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	def searchProducts() {
+		render (view : '/index')
+	}
 }

@@ -98,6 +98,11 @@ img {
     text-indent: 1.7%;
 }
 
+#session {
+	text-align: right;
+	margin-right: 1%;
+}
+
 img.header {
     float: right;
     margin-right: 1%;
