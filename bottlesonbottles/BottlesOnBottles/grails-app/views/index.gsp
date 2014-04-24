@@ -117,15 +117,16 @@ p {
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="status" role="complementary">
 		<h1>Search Product</h1>
-		<g:form action="searchProducts" method="post">
+		<g:form action="searchProducts" method="get">
 			<ul>
-				<li><label for="name">name</label> <g:textField name="name" /></li>
-				<li><label for="price">price</label> <g:textField name="price" /></li>
-				<li><label for="AOC">AOC</label> <g:textField name="AOC" /></li>
-				<li><label for="country">country</label> <g:textField name="country" /></li>
-				<li><label for="quantity">quantity</label> <g:textField name="quantity" /></li>
-				<li><label for="percentage">percentage</label> <g:textField name="percentage" /></li>
-				<li><label for="age">age</label> <g:textField name="age" /></li>
+				<li><label for="name">name</label> <g:textField name="name" value="${product?.name}"/></li>
+				<li><label for="upc">UPC</label> <g:textField name="upc" value="${product?.upc}"/></li>
+				<li><label for="price">price</label> <g:textField name="price" value="${product?.price}"/></li>
+				<li><label for="aoc">AOC</label> <g:textField name="upc" value="${product?.aoc}"/></li>
+				<li><label for="country">country</label> <g:textField name="country" value="${product?.country}"/></li>
+				<li><label for="size">size</label> <g:textField name="size" value="${product?.size}"/></li>
+				<li><label for="percent">percentage</label> <g:textField name="percent" value="${product?.percent}"/></li>
+				<li><label for="age">age</label> <g:textField name="age" value="${product?.age}"/></li>
 			</ul>
 			<g:actionSubmit value="Search" action="searchProducts"/>
 		</g:form>
