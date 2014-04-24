@@ -4,15 +4,13 @@
 	</div>
 	<div id="session">
 		<nobr>
-			<g:if test="${session.user}">
-				<b>${session.user?.firstName}&nbsp;${session.user?.lastName}</b> |
-				<g:link controller="user" action="logout">Logout</g:link>
-			</g:if>
-			<g:else>
-				<a href="login/auth">Login</a>
-				<!--<g:link controller="user" action="login">Login</g:link>
-			-->
-			</g:else>
+			<sec:ifLoggedIn>
+				Welcome back, <b><sec:username/></b>! &nbsp;&nbsp;
+				<g:link controller='logout' action='logout'>Logout</g:link>
+			</sec:ifLoggedIn>
+			<sec:ifNotLoggedIn>
+				<g:link controller='login' action='auth'>Login</g:link>
+			</sec:ifNotLoggedIn>
 		</nobr>
 	</div>
 </div>
