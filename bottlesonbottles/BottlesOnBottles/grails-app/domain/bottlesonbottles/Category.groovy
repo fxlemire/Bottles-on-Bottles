@@ -1,7 +1,8 @@
 package bottlesonbottles
 
 class Category {
-
+    
+    static searchable = true;
     static hasMany = [products: Product]
     
     String name
