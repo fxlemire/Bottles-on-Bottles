@@ -2,7 +2,7 @@ package bottlesonbottles
 
 class Product {
 
-    static serchable = true;
+    static searchable = true;
     Category category
     static belongsTo = Category
     
