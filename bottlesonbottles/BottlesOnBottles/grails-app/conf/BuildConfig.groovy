@@ -40,8 +40,10 @@ grails.project.dependency.resolution = {
         mavenLocal()
         grailsCentral()
         mavenCentral()
-        //our added repositorie for security plugin
-        mavenRepo 'http://repo.spring.io/milestone'
+        //our added repositorie
+        mavenRepo 'http://repo.spring.io/milestone' //for security plugin
+        mavenRepo "http://repo.grails.org/grails/core" //for searchable plugin
+        
         
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
@@ -66,6 +68,7 @@ grails.project.dependency.resolution = {
         compile ':spring-security-core:2.0-RC2' //core security plugin
         compile ':spring-security-ui:1.0-RC1' // for a ui
         compile ":h2:0.2.6" // To try and fix compilation issues
+        compile ":searchable:0.6.6" // for you know seaching
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
