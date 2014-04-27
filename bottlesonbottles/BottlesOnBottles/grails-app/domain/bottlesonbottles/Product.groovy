@@ -11,7 +11,7 @@ class Product {
     String aoc //Special Regional Distiction 
     String description //Product Description
     byte[] image // path to image
-    String price //price of product
+    int price //price of product
     String country //country of origin 
     String size // volume / quanity
     int percent // percentage alcohol content

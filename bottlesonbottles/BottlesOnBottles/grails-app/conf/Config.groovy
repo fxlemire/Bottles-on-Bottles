@@ -136,7 +136,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/logout':						  ['permitAll'],
 	'/logout.*':					  ['permitAll'],
 	'/logout/*':					  ['permitAll'],
-        '/searchable': ['permitAll']
+    '/searchable': 					  ['permitAll']
 ]
 
 
@@ -154,5 +154,5 @@ grails.plugin.springsecurity.interceptUrlMap = [
     '/**/favicon.ico':                ['permitAll'],
     '/login/**':                      ['permitAll'],
     '/logout/**':                     ['permitAll'],
-    '/searchable' :['permitAll']
+    '/searchable':					  ['permitAll']
 ]

@@ -1,5 +1,5 @@
 <div id="topbar">
-	<div id="header">Bottles On Bottles<img class="header"
+	<div id="header"><a class="bob" href="${createLink(uri: '/')}">Bottles On Bottles</a><img class="header"
 		src="http://localhost:8080/BottlesOnBottles/images/logo.jpg" alt="bottlesOnBottles" />
 	</div>
 	<div id="session">

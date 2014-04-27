@@ -98,6 +98,11 @@ img {
     text-indent: 1.7%;
 }
 
+#header a.bob {
+	text-decoration: none;
+	color: #FFF;
+}
+
 #session {
 	text-align: right;
 	margin-right: 1%;

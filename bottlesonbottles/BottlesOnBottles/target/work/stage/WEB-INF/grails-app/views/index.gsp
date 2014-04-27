@@ -46,6 +46,7 @@ input {
 
 #status {
 	background-color: #FAFAFA;
+	border-top: 1px solid #E0E0E0;
 	border-right: 1px solid #E0E0E0;
 	width: 19%;
 	height: 100%;
@@ -117,16 +118,38 @@ p {
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="status" role="complementary">
 		<h1>Search Product</h1>
-		<ul>
-			<li>name <input type="text" /></li>
-			<li>price <input type="text" /></li>
-			<li>AOC <input type="text" /></li>
-			<li>country <input type="text" /></li>
-			<li>quantity <input type="text" /></li>
-			<li>percentage <input type="text" /></li>
-			<li>age <input type="text" /></li>
-		</ul>
-		<input type="submit" />
+		<g:form action="searchProducts" method="get">
+			<ul>
+				<li><label for="name">name</label> <g:textField name="name" value="${product?.name}"/></li>
+			<!--
+				<li><label for="upc">UPC</label> <g:textField name="upc" value="${product?.upc}"/></li>
+				<li><label for="price">price</label> <g:textField name="price" value="${product?.price}"/></li>
+			-->
+			
+				<li><label for="priceFrom">price from</label> <g:textField name="priceFrom" value="${product?.price}"/></li>
+				<li><label for="priceTo">price to</label> <g:textField name="priceTo" value="${product?.price}"/></li>
+			<!--
+				<li><label for="aoc">AOC</label> <g:textField name="aoc" value="${product?.aoc}"/></li>
+				<li><label for="country">country</label> <g:textField name="country" value="${product?.country}"/></li>
+				<li><label for="size">size</label> <g:textField name="size" value="${product?.size}"/></li>
+				<li><label for="percent">percentage</label> <g:textField name="percent" value="${product?.percent}"/></li>
+				<li><label for="age">age</label> <g:textField name="age" value="${product?.age}"/></li>
+			-->
+			</ul>
+			<g:actionSubmit value="Search" action="searchProducts"/>
+		</g:form>
+		<br>
+		<br>
+		<h1>Search Category</h1>
+		<g:form action="searchCategory" method="get">
+			<ul>
+				<li><label for="category">category</label> <g:textField name="category" /></li>
+			</ul>
+			<g:actionSubmit value="Search Category Products" action="searchCategoryProducts"/>
+			<br>
+			<br>
+			<g:actionSubmit value="Search Categories" action="searchCategory"/>
+		</g:form>
 	</div>
 	<!--<div id="page-body" role="main">-->
 
@@ -158,6 +181,9 @@ p {
 						<g:sortableColumn property="name"
 							title="${message(code: 'product.name.label', default: 'Name')}" />
 	
+						<g:sortableColumn property="category"
+							title="${message(code: 'product.category.label', default: 'Category')}" />
+							
 						<g:sortableColumn property="upc"
 							title="${message(code: 'product.upc.label', default: 'Upc')}" />
 	
@@ -182,7 +208,12 @@ p {
 							<td><g:link controller="Product" action="show"
 									id="${productInstance.id}">
 									${fieldValue(bean: productInstance, field: "name")}
-								</g:link></td>
+								</g:link>
+							</td>
+							
+							<td>
+								${fieldValue(bean: productInstance, field: "category")}
+							</td>
 	
 							<td>
 								${fieldValue(bean: productInstance, field: "upc")}
