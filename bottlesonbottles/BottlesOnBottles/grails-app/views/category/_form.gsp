@@ -20,12 +20,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: categoryInstance, field: 'image', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: categoryInstance, field: 'image', 'error')} required">
 	<label for="image">
 		<g:message code="category.image.label" default="Image" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="image" value="${categoryInstance?.image}"/>
+	<input type="file" id="image" name="image" />
 
 </div>
 

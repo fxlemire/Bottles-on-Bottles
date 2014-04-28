@@ -90,14 +90,15 @@ class HomePageController {
 	@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def searchCategoryProducts() {
 		def productInstanceList
-                def categoryInstanceList
+        def categoryInstanceList
 		def categoryName = "%" + params.category + "%"
 			
 		if (params.category) {
                     
-                        categoryInstanceList = Category.findByName(params.category)
-                        if(categoryInstanceList == null)
-                            flash.message = "Category not found"
+            categoryInstanceList = Category.findByName(params.category)
+            if(categoryInstanceList == null) {
+            	flash.message = "Category not found"
+            }
 			productInstanceList = Product.createCriteria().list {
 				like ("category",categoryInstanceList)
 			}
@@ -115,10 +116,17 @@ class HomePageController {
 
 		if (params.category) {
 			cat = Category.findByName(params.category)
-			respond cat
+			if (cat) {
+				redirect(controller:"Category", action:"showCat", params:[cat: cat.id])
+			} else {
+				flash.message = "Category not found"
+				redirect(uri: request.getHeader('referer'))
+			}
+		} else if (Category.list()) {
+				redirect(controller:'Category', action: "index")
 		} else {
-			flash.message = "Category not found"
-			redirect(uri: request.getHeader('referer') )
+				flash.message = "Category not found"
+				redirect(uri: request.getHeader('referer'))
 		}
 	}
 	

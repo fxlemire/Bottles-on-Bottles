@@ -7,7 +7,7 @@ class Category {
     
     String name
     String description
-    String image
+    byte[] image
     
     static mapping = {
         name column: 'name'
@@ -17,7 +17,7 @@ class Category {
     static constraints = {
         name(blank: false)
         description(blank:true, nullable: true)
-        image(blank:true, nullable: true)
+        image(maxSize: 1024*1024*2)
     }
     
     String toString() {

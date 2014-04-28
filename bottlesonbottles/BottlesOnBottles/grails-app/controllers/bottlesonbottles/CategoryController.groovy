@@ -1,32 +1,28 @@
 package bottlesonbottles
 
 
-import grails.plugin.springsecurity.annotation.Secured
+
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class CategoryController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", update: ["PUT","POST"], delete: "DELETE"]
 
-    @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Category.list(params), model:[categoryInstanceCount: Category.count()]
     }
 
-    @Secured(['ROLE_ADMIN'])
     def show(Category categoryInstance) {
         respond categoryInstance
     }
 
-    @Secured(['ROLE_ADMIN'])
     def create() {
         respond new Category(params)
     }
 
-    @Secured(['ROLE_ADMIN'])
     @Transactional
     def save(Category categoryInstance) {
         if (categoryInstance == null) {
@@ -50,12 +46,10 @@ class CategoryController {
         }
     }
 
-    @Secured(['ROLE_ADMIN'])
     def edit(Category categoryInstance) {
         respond categoryInstance
     }
 
-    @Secured(['ROLE_ADMIN'])
     @Transactional
     def update(Category categoryInstance) {
         if (categoryInstance == null) {
@@ -79,7 +73,6 @@ class CategoryController {
         }
     }
 
-    @Secured(['ROLE_ADMIN'])
     @Transactional
     def delete(Category categoryInstance) {
 
@@ -99,6 +92,12 @@ class CategoryController {
         }
     }
 
+    def displayImage(Category categoryInstance) {
+        def product = Category.get( params.id ) // get the record
+        response.outputStream << categoryInstance.image // write the image to the outputstream
+        response.outputStream.flush()
+    }
+    
     protected void notFound() {
         request.withFormat {
             form multipartForm {
