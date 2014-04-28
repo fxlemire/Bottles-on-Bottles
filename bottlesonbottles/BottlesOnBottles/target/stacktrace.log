@@ -17929,3 +17929,1110 @@ C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails
 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
 	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:50:14,825 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+       '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.grails.compiler.Grailsc.compile(Grailsc.java:78)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor669.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1260)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:319)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:264)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:203)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:296)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler$compile$3.callCurrent(Unknown Source)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:263)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compileAll(GrailsProjectCompiler.groovy:254)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.compileIfSource(GrailsProjectWatcher.java:279)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.access$300(GrailsProjectWatcher.java:46)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$1.onChange(GrailsProjectWatcher.java:153)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.fireOnChange(DirectoryWatcher.java:174)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:156)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:178)
+	at java_lang_Runnable$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess.startProjectWatcher(ForkedGrailsProcess.groovy:707)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy:696)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.run(Closure.java:492)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:50:14,828 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+       '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:50:14,842 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+       '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:50:14,843 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+       '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:03,963 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:03,965 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:03,977 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:03,978 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:04,405 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:04,406 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:04,420 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 17:51:04,422 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\conf\Config.groovy: 148: expecting EOF, found ':' @ line 148, column 8.
+     //  '/':                              ['permitAll'],
+          ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:02:01,791 [FileSystemWatcher: files=#384 cl=groovy.lang.GroovyClassLoader@2bf8e35d] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "bottlesonbottles/HomePageController$$DOcihszc"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1093)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:382)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:828)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:02:01,818 [FileSystemWatcher: files=#384 cl=groovy.lang.GroovyClassLoader@2bf8e35d] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "bottlesonbottles/HomePageController$$DOcihszc"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:02:01,819 [FileSystemWatcher: files=#384 cl=groovy.lang.GroovyClassLoader@2bf8e35d] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "bottlesonbottles/HomePageController$$DOcihszc"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:02:01,819 [FileSystemWatcher: files=#384 cl=groovy.lang.GroovyClassLoader@2bf8e35d] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "bottlesonbottles/HomePageController$$DOcihszc"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:15:29,859 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.grails.compiler.Grailsc.compile(Grailsc.java:78)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:319)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:264)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:203)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:296)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler$compile$3.callCurrent(Unknown Source)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:263)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compileAll(GrailsProjectCompiler.groovy:254)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.compileIfSource(GrailsProjectWatcher.java:279)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.access$300(GrailsProjectWatcher.java:46)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$1.onChange(GrailsProjectWatcher.java:153)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.fireOnChange(DirectoryWatcher.java:174)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:156)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:178)
+	at java_lang_Runnable$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess.startProjectWatcher(ForkedGrailsProcess.groovy:707)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy:696)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.run(Closure.java:492)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:15:29,864 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:15:29,946 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:15:29,947 [http-bio-8080-exec-10] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:02,721 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:02,723 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:02,736 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:02,737 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:06,461 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:06,462 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:06,478 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:06,480 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 25: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 25, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 31: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 31, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 53: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 53, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 59: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 59, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+C:\Users\Joshua\Documents\GitHub\IS2150\bottlesonbottles\BottlesOnBottles\grails-app\controllers\bottlesonbottles\CategoryController.groovy: 83: unable to resolve class Secured ,  unable to find class for annotation
+ @ line 83, column 5.
+       @Secured(['ROLE_ADMIN'])
+       ^
+
+5 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:927)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:523)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:506)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1104)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1155)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:770)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:09,150 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.mapsToURI(DefaultGrailsControllerClass.java:191)
+	at org.codehaus.groovy.grails.commons.ControllerArtefactHandler.getArtefactForFeature(ControllerArtefactHandler.java:111)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.getArtefactForFeature(DefaultGrailsApplication.java:525)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.isController(AnnotationFilterInvocationDefinition.java:167)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.findGrailsUrl(AnnotationFilterInvocationDefinition.java:156)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.determineUrl(AnnotationFilterInvocationDefinition.java:111)
+	at grails.plugin.springsecurity.web.access.intercept.AbstractFilterInvocationDefinition.getAttributes(AbstractFilterInvocationDefinition.java:86)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:174)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:139)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:49)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:09,152 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.isController(AnnotationFilterInvocationDefinition.java:167)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.findGrailsUrl(AnnotationFilterInvocationDefinition.java:156)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.determineUrl(AnnotationFilterInvocationDefinition.java:111)
+	at grails.plugin.springsecurity.web.access.intercept.AbstractFilterInvocationDefinition.getAttributes(AbstractFilterInvocationDefinition.java:86)
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:49)
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:09,263 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.isController(AnnotationFilterInvocationDefinition.java:167)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.findGrailsUrl(AnnotationFilterInvocationDefinition.java:156)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.determineUrl(AnnotationFilterInvocationDefinition.java:111)
+	at grails.plugin.springsecurity.web.access.intercept.AbstractFilterInvocationDefinition.getAttributes(AbstractFilterInvocationDefinition.java:86)
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:49)
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+2014-04-28 18:16:09,264 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.isController(AnnotationFilterInvocationDefinition.java:167)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.findGrailsUrl(AnnotationFilterInvocationDefinition.java:156)
+	at grails.plugin.springsecurity.web.access.intercept.AnnotationFilterInvocationDefinition.determineUrl(AnnotationFilterInvocationDefinition.java:111)
+	at grails.plugin.springsecurity.web.access.intercept.AbstractFilterInvocationDefinition.getAttributes(AbstractFilterInvocationDefinition.java:86)
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:49)
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)

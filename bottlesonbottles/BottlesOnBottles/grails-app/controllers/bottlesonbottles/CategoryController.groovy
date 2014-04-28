@@ -1,7 +1,7 @@
 package bottlesonbottles
 
 
-
+import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -9,7 +9,6 @@ import grails.transaction.Transactional
 class CategoryController {
 
     static allowedMethods = [save: "POST", update: ["PUT","POST"], delete: "DELETE"]
-
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Category.list(params), model:[categoryInstanceCount: Category.count()]
@@ -18,12 +17,18 @@ class CategoryController {
     def show(Category categoryInstance) {
         respond categoryInstance
     }
-
+    
+    def showCat() {
+		def cat = Category.get(params.cat)
+		respond cat, view:'show'
+	}
+    @Secured(['ROLE_ADMIN'])
     def create() {
         respond new Category(params)
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN'])
     def save(Category categoryInstance) {
         if (categoryInstance == null) {
             notFound()
@@ -45,12 +50,13 @@ class CategoryController {
             '*' { respond categoryInstance, [status: CREATED] }
         }
     }
-
+    @Secured(['ROLE_ADMIN'])
     def edit(Category categoryInstance) {
         respond categoryInstance
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN'])
     def update(Category categoryInstance) {
         if (categoryInstance == null) {
             notFound()
@@ -74,6 +80,7 @@ class CategoryController {
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN'])
     def delete(Category categoryInstance) {
 
         if (categoryInstance == null) {

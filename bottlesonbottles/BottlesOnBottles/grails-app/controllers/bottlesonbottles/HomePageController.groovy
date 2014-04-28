@@ -7,7 +7,7 @@ class HomePageController {
 	
 	static scaffold = Product
 	
-    @Secured(['ROLE_USER','ROLE_ADMIN'])
+    //@Secured(['ROLE_USER','ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         List<Product> productInstanceList = Product.list(params)
@@ -15,7 +15,7 @@ class HomePageController {
        
     }
 	
-    @Secured(['ROLE_USER','ROLE_ADMIN'])
+    //@Secured(['ROLE_USER','ROLE_ADMIN'])
     def searchProducts() {
         //List<Product> productInstanceList = Product.search(params.name, [result:'every']/*params.name /*upc: upc:params.upc, price:params.price, aoc:params.aoc, country:params.country, size:params.size, percent:params.int('percent'), age:params.int('age')*/)
         //def productInstanceList = Product.findAllWhere([name:params.name, /*upc:params.upc,*/ price:params.price, aoc:params.aoc, country:params.country, size:params.size, percent:params.int('percent'), age:params.int('age')])
@@ -87,7 +87,7 @@ class HomePageController {
 		render (view : '/index', model : [productInstanceList: productInstanceList])
     }
 	
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	//@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def searchCategoryProducts() {
 		def productInstanceList
         def categoryInstanceList
@@ -109,7 +109,7 @@ class HomePageController {
 		render (view : '/index', model : [productInstanceList: productInstanceList])
 	}
 	
-	@Secured(['ROLE_USER','ROLE_ADMIN'])
+	//@Secured(['ROLE_USER','ROLE_ADMIN'])
 	def searchCategory() {
 		def cat
 		def categoryName = "%" + params.category + "%"

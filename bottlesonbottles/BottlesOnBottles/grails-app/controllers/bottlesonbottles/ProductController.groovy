@@ -11,13 +11,13 @@ class ProductController {
 
     static allowedMethods = [save: "POST", update: ["PUT","POST"], delete: "DELETE"]
 
-    @Secured(['ROLE_ADMIN'])
+    //@Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Product.list(params), model:[productInstanceCount: Product.count()]
     }
 
-    @Secured(['ROLE_ADMIN'])
+   // @Secured(['ROLE_ADMIN'])
     def show(Product productInstance) {
         respond productInstance
     }
@@ -99,7 +99,7 @@ class ProductController {
             '*'{ render status: NO_CONTENT }
         }
     }
-    @Secured(['ROLE_ADMIN'])
+    //@Secured(['ROLE_ADMIN'])
     def displayImage(Product productInstance) {
         def product = Product.get( params.id ) // get the record
         response.outputStream << productInstance.image // write the image to the outputstream
