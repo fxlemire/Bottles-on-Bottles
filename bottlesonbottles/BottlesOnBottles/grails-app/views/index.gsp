@@ -161,8 +161,8 @@ p {
 		<sec:ifAllGranted roles="ROLE_ADMIN">
 			<div id="adminMenu">
 				<ul>
-					<li><a href="product/index">Product</a></li>
-					<li><a href="category/index">Category</a></li>
+					<li><a href="${createLink(uri: '/product/index')}">Product</a></li>
+					<li><a href="${createLink(uri: '/category/index')}">Category</a></li>
 				</ul>
 			</div>
 		</sec:ifAllGranted>

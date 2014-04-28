@@ -45,7 +45,7 @@
 			
 				<g:if test="${categoryInstance?.image}">
 				<li class="fieldcontain">
-					<span id="image-label" class="property-label"><g:message code="category.image.label" default="Image" /></span>
+					<span id="image-label" class="property-label"> <img src="/BottlesOnBottles/category/displayImage/${categoryInstance.id}" width = "100" height = "100"></span>
 					
 				</li>
 				</g:if>
