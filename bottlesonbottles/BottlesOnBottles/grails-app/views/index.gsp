@@ -117,6 +117,7 @@ p {
 	<a href="#page-body" class="skip"><g:message
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="status" role="complementary">
+            <div><g:link action="aboutus"> about us </g:link></div>
 		<h1>Search Product</h1>
 		<g:form action="searchProducts" method="get">
 			<ul>
@@ -150,6 +151,8 @@ p {
 			<br>
 			<g:actionSubmit value="Search Categories" action="searchCategory"/>
 		</g:form>
+                        
+               
 	</div>
 	<!--<div id="page-body" role="main">-->
 
