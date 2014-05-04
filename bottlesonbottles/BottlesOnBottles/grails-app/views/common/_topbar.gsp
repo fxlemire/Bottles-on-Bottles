@@ -1,5 +1,6 @@
 <div id="topbar">
-	<div id="header"><a class="bob" href="${createLink(uri: '/')}">Bottles On Bottles</a><img class="header" src="../images/logo.jpg" alt="BottlesOnBottles" />
+	<div id="header">
+            <a class="bob" href="${createLink(uri: '/')}">Bottles On Bottles</a><img class="header" src="../images/logo.jpg" alt="BottlesOnBottles" />
 	</div>
 	<div id="session">
 		<nobr>
