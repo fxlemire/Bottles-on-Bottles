@@ -28,7 +28,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://is2150-4-i.comp.nus.edu.sg/isproject"
+            url = "jdbc:mysql://is2150-4-i.comp.nus.edu.sg/isproject?autoReconnect=true"
             username = "fxlemire"
             password = "is2150"
             /*
